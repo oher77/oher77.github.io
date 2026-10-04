@@ -13,164 +13,130 @@
   }
   h1 { font-size: 1.6rem; margin: 0 0 4px; }
   h2 { font-size: 1.15rem; margin: 40px 0 8px; padding-top: 16px; border-top: 1px solid #e7dfc4; }
+  h3 { font-size: 1rem; margin: 24px 0 6px; }
   .updated { color: #7a7364; font-size: 0.9rem; margin: 0 0 8px; }
   .lede { background: #fff; border: 1px solid #e7dfc4; border-radius: 12px; padding: 16px 18px; margin: 24px 0; }
   ul { padding-left: 20px; }
   li { margin: 6px 0; }
   a { color: #b5651d; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 0.95rem; }
+  th, td { border: 1px solid #e7dfc4; padding: 8px 10px; text-align: left; vertical-align: top; background: #fff; }
+  th { background: #f6efd8; font-weight: 600; }
+  .note { font-size: 0.95rem; color: #5c5649; }
   footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid #e7dfc4; font-size: 0.9rem; color: #7a7364; }
-  .en { margin-top: 72px; }
-  .en h1 { font-size: 1.35rem; }
 </style>
 </head>
 <body>
 
 <h1>개인정보처리방침</h1>
-<p class="updated">호랑잉글리시(Horang English) · 최종 수정일: 2026년 8월 21일</p>
+<p class="updated">호랑잉글리시(Horang English) · 시행일: 2026년 10월 23일</p>
 
 <div class="lede">
-  <strong>호랑잉글리시는 이용자의 개인정보를 일절 수집하지 않습니다.</strong>
-  앱에는 회원가입·로그인이 없고, 서버로 데이터를 자동 전송하는 기능이 없습니다.
-  학습 기록은 전부 이용자의 기기 안에만 저장되며, <strong>이용자가 직접
-  [사용 기록 보내기]를 누른 경우에만</strong> 앱 사용 기록이 개발자에게 전달됩니다(아래 2항).
+  <strong>호랑잉글리시는 이름·연락처·위치 등 개인을 식별할 수 있는 정보를 수집하지 않습니다.</strong>
+  회원가입과 로그인이 없고, 학습 기록은 전부 이용자의 기기 안에만 저장됩니다.
+  앱을 더 낫게 만들기 위해 <strong>익명 사용 통계</strong>와 <strong>오류 기록</strong>만
+  외부로 전송되며(아래 1항), 여기에는 이용자가 누구인지 알 수 있는 정보가 담기지 않습니다.
+  광고 식별자를 사용하지 않고, 다른 회사의 데이터와 엮는 <strong>추적(tracking)을 하지 않습니다.</strong>
 </div>
 
-<h2>1. 수집하는 개인정보</h2>
-<p>없습니다. 이 앱은 이름·이메일·전화번호·위치·연락처·사진·기기 식별자 등
-어떠한 개인정보도 수집하거나 요구하지 않습니다. 광고 식별자를 사용하지 않으며,
-분석(애널리틱스)·추적·광고 SDK를 탑재하고 있지 않습니다.
-앱 사용 기록을 이용자가 직접 보내는 경우에 대해서는 아래 2항에서 설명합니다.</p>
+<h2>1. 외부로 전송되는 정보</h2>
 
-<h2>2. 기기에 저장되는 정보</h2>
-<p>학습 기능을 제공하기 위해 아래 정보가 <strong>이용자의 기기 내부에만</strong> 저장됩니다.</p>
+<h3>1-1. 익명 사용 통계</h3>
+<p>아이가 학습을 이어 가는지, 어디에서 멈추는지를 파악해 앱을 고치기 위해
+<strong>앱 사용 기록</strong>을 익명으로 전송합니다. 어떤 기능을 언제 사용했는지(앱 실행,
+단어장 학습, 테스트, 알림 설정, 용돈 장부 체크 등)와 그에 딸린 숫자(머문 시간, 횟수, 점수,
+금액)가 전부입니다.</p>
+<p>각 기록에는 <strong>설치 후 경과일, 학습 Day 번호, 앱 버전, 운영체제 이름과 버전,
+플랫폼, 설치 번호</strong>가 함께 붙습니다.</p>
+<p class="note"><strong>설치 번호</strong>는 앱이 처음 실행될 때 스스로 만드는 무작위 숫자입니다.
+기기 식별자가 아니며 기기나 다른 앱과 아무 관련이 없고, 이용자를 알아내는 데 쓸 수 없습니다.
+<strong>앱을 삭제하면 함께 사라지고, 다시 설치하면 새 번호가 만들어집니다.</strong></p>
+<p><strong>다음은 통계에 담기지 않습니다</strong> — 공부한 단어가 무엇인지, 테스트에 입력한 답,
+이름을 비롯한 모든 자유 입력 문자열, IP 주소, 기기 모델·제조사, 통신사, 언어, 위치,
+광고 식별자(IDFA·AAID). 앱은 이 값들을 보내지 않도록 설정되어 있으며,
+IP 주소로 지역을 추정하는 기능도 꺼 두었습니다.</p>
+
+<h3>1-2. 오류 기록</h3>
+<p>앱이 멈추거나 오류 화면이 떴을 때, 원인을 찾기 위해 <strong>오류 메시지와 그 오류가
+발생한 코드 위치</strong>를 전송합니다. 여기에는 기기 모델, 운영체제 이름과 버전,
+앱 버전이 함께 담깁니다.</p>
+<p>화면 캡처, 화면 녹화(세션 리플레이), 성능 추적, 이용자 식별 정보 전송은
+<strong>모두 꺼져 있습니다.</strong> 학습 내용이나 입력한 답은 오류 기록에 포함되지 않습니다.</p>
+
+<h2>2. 수집하지 않는 정보</h2>
+<p>이 앱은 아래 정보를 수집하지도, 요구하지도 않습니다.</p>
 <ul>
-  <li>단어장·복습·테스트 진행 기록(학습한 날짜, 정답·오답 표시, 발음 체크 표시)</li>
-  <li>테스트 점수와 그에 연동된 용돈 장부의 지급 체크 내역</li>
-  <li>앱 설정값(알림 사용 여부, 금액 설정 등)</li>
-  <li><strong>앱 사용 기록</strong> — 앱을 열고 닫은 시각, 홈 화면에서 누른 위치와 버튼(손가락이 움직인 거리를 함께 기록해 탭과 스크롤을 구분합니다),
-      단어장에 들어간 시각과 경로,
-      각 화면(단어장·복습·테스트·발음 체크·업적·설정)에 머무른 시간, 단어장에서 발음 듣기·예문 열기·가리기·엿보기·
-      스와이프를 각각 몇 번 했는지(화면을 한 번 방문할 때마다 합계로만 기록되며,
-      어떤 단어에 대해 했는지는 기록하지 않습니다)</li>
+  <li>이름, 이메일 주소, 전화번호, 생년월일, 주소</li>
+  <li>위치 정보, 연락처, 사진, 마이크 입력</li>
+  <li>광고 식별자(IDFA·AAID) 및 이를 이용한 맞춤형 광고</li>
+  <li>기기 고유 식별자(IDFV 등)</li>
 </ul>
-<p>이 정보는 앱 밖으로 <strong>자동으로 전송되지 않습니다.</strong> 다만 이용자가
-[사용 기록 보내기]를 <strong>직접 눌러 보내는 경우에 한해</strong> 개발자에게 전달됩니다
-(설정 화면, 또는 앱이 가끔 띄우는 요청 화면). 무엇이 담기는지는 보내기 전에 화면에서
-요약으로 확인할 수 있고, 파일 자체도 텍스트라 직접 열어볼 수 있습니다.
-어디로 보낼지도 이용자가 직접 고릅니다.</p>
-<p><strong>전달되는 것</strong>은 위 목록의 <strong>앱 사용 기록</strong>과, 학습한 날짜·진도,
-테스트를 본 날짜, 앱 버전뿐입니다.
-<strong>이름·이메일·전화번호·기기 식별자, 테스트 점수, 정답·오답 내용, 용돈 금액,
-어떤 단어를 공부했는지는 포함되지 않습니다.</strong></p>
-<p>이 정보는 앱을 삭제하면 기기에서 함께 삭제됩니다. iCloud 기기 백업을 켜 두신 경우,
-Apple의 기기 백업 정책에 따라 앱 데이터가 백업에 포함될 수 있습니다.
-이 백업은 Apple이 관리하며 개발자는 접근할 수 없습니다.</p>
+<p>앱에는 광고가 없고, 수집한 정보를 다른 회사의 데이터와 결합하는 추적 기능이 없습니다.</p>
 
-<h2>3. 네트워크 통신</h2>
-<p>이 앱은 정상적인 사용 과정에서 인터넷에 연결하지 않습니다.
-단어·뜻·예문 데이터는 앱 설치 파일에 포함되어 있어 오프라인에서 동작합니다.
-[사용 기록 보내기]를 누르면 앱이 직접 통신하는 것이 아니라, 기기의 공유 기능을 통해
-이용자가 고른 다른 앱(예: 메신저)에 파일을 넘겨줍니다.</p>
-
-<h2>4. 기기 기능 사용</h2>
+<h2>3. 기기에만 저장되는 정보</h2>
+<p>학습 기능을 제공하기 위해 아래 정보가 <strong>이용자의 기기 안에만</strong> 저장되며,
+외부로 전송되지 않습니다.</p>
 <ul>
-  <li><strong>음성 합성(TTS)</strong> — 단어 발음을 들려주기 위해 iOS에 내장된 음성 합성 기능을 사용합니다. 녹음 기능은 없으며, 마이크를 사용하지 않습니다.</li>
-  <li><strong>알림</strong> — 학습 시간 알림은 기기 안에서 예약되는 로컬 알림입니다. 원격 푸시 알림을 사용하지 않으므로 기기 토큰을 발급받거나 서버로 보내지 않습니다. 알림은 기본값이 꺼짐이며 설정에서 이용자가 직접 켤 수 있습니다.</li>
-  <li><strong>공유(자랑하기)</strong> — 이용자가 직접 버튼을 눌렀을 때에만 학습 성과 이미지를 만들어 iOS 공유 시트에 전달합니다. 어디에 보낼지는 이용자가 선택하며, 개발자에게 전송되지 않습니다.</li>
+  <li>단어장·복습·테스트 진행 기록(학습한 날짜, 단어별 기억 표시, 발음 체크 표시, 정답·오답 내용)</li>
+  <li>테스트 점수와 용돈 장부의 금액·지급 체크 내역</li>
+  <li>앱 설정값(하루 단어 수, 학습 시간대, 알림 사용 여부, 금액 규칙 등)</li>
+</ul>
+<p>이 정보는 앱을 삭제하면 기기에서 함께 삭제됩니다.</p>
+
+<h2>4. iCloud 백업</h2>
+<p>기기에서 iCloud 백업을 켜 두신 경우, 위 학습 데이터는 Apple의 백업 정책에 따라
+<strong>기기 백업에 포함됩니다.</strong> 이 백업은 <strong>이용자 본인의 Apple 계정</strong>
+아래 Apple의 서버에 보관되며, <strong>개발자는 접근할 수 없습니다.</strong>
+기기를 바꾸고 백업에서 복원하면 학습 기록도 함께 복원됩니다.</p>
+<p class="note">앱만 삭제했다가 다시 설치하는 경우에는 복원되지 않습니다 — 기기 백업은
+기기를 복원할 때 적용되기 때문입니다. iCloud 백업을 꺼 두시면 백업에 포함되지 않습니다.</p>
+
+<h2>5. 처리 위탁 및 국외 이전</h2>
+<p>1항의 정보는 아래 사업자의 서비스를 통해 처리되며, 해당 서버는 미국에 있습니다.
+각 사업자의 개인정보 처리에 관한 사항은 사업자명의 링크에서 확인하실 수 있습니다.</p>
+<table>
+  <tr><th>받는 곳</th><th>국가</th><th>항목</th><th>목적</th></tr>
+  <tr>
+    <td><a href="https://amplitude.com/privacy" rel="noopener noreferrer" target="_blank">Amplitude, Inc.</a></td>
+    <td>미국</td>
+    <td>1-1의 익명 사용 통계</td>
+    <td>기능 개선을 위한 이용 행태 분석</td>
+  </tr>
+  <tr>
+    <td><a href="https://sentry.io/privacy/" rel="noopener noreferrer" target="_blank">Functional Software, Inc. (Sentry)</a></td>
+    <td>미국</td>
+    <td>1-2의 오류 기록</td>
+    <td>오류 원인 파악 및 수정</td>
+  </tr>
+</table>
+<p><strong>보관과 삭제</strong> — 전송된 정보는 위탁이 종료되거나 각 사업자의 보관 정책에 따른
+기간이 지나면 삭제됩니다. <strong>개발자는 이 정보를 따로 내려받아 보관하지 않습니다.</strong></p>
+<p><strong>제3자의 보호 수준</strong> — 위 사업자는 전달받은 정보를 이 방침에 적힌 것과
+동등한 수준으로 보호합니다.</p>
+<p class="note">전송되는 항목에는 개인을 식별할 수 있는 정보가 포함되어 있지 않으며,
+전송은 암호화된 통신(HTTPS)으로 이루어집니다.
+<strong>앱을 삭제하면 그 이후로는 통계와 오류 기록이 전송되지 않습니다.</strong></p>
+
+<h2>6. 기기 기능 사용</h2>
+<ul>
+  <li><strong>음성 합성(TTS)</strong> — 단어 발음을 들려주기 위해 기기에 내장된 음성 합성 기능을 사용합니다. 녹음 기능은 없으며 마이크를 사용하지 않습니다.</li>
+  <li><strong>알림</strong> — 학습 시간 알림은 기기 안에서 예약되는 로컬 알림입니다. 원격 푸시를 사용하지 않으므로 기기 토큰을 발급받거나 서버로 보내지 않습니다. 기본적으로 꺼져 있으며 설정에서 이용자가 직접 켭니다.</li>
+  <li><strong>공유(자랑하기)</strong> — 이용자가 버튼을 눌렀을 때에만 학습 성과 이미지를 만들어 기기의 공유 기능에 넘깁니다. 어디에 보낼지는 이용자가 고르며, 개발자에게 전송되지 않습니다.</li>
 </ul>
 
-<h2>5. 아동의 개인정보</h2>
-<p>이 앱은 중학생을 주 이용자로 하는 학습 앱입니다.
-개인정보를 수집하지 않으므로 아동으로부터 수집되는 정보도 없습니다.</p>
-
-<h2>6. 제3자 제공 및 위탁</h2>
-<p>수집하는 개인정보가 없으므로 제3자에게 제공하거나 처리를 위탁하는 정보도 없습니다.</p>
-
-<h2>7. 이용자의 권리</h2>
-<p>모든 데이터가 기기 안에만 있으므로, 앱을 삭제하는 것만으로 전체 데이터를 완전히 삭제할 수 있습니다.
-별도의 삭제 요청 절차가 필요하지 않습니다.</p>
+<h2>7. 아동의 개인정보</h2>
+<p>이 앱은 아동을 비롯한 모든 이용자로부터 개인을 식별할 수 있는 정보를 수집하지 않으며,
+광고 식별자를 사용하지 않고, 이용자를 추적하거나 맞춤형 광고에 활용하지 않습니다.
+1항의 통계는 개인과 연결되지 않는 익명 정보입니다.</p>
 
 <h2>8. 방침 변경</h2>
-<p>이 방침이 변경되면 이 페이지에 수정된 내용과 최종 수정일을 게시합니다.</p>
+<p>이 방침이 변경되면 이 페이지에 바뀐 내용과 시행일을 게시합니다.</p>
 
 <h2>9. 문의</h2>
 <p>개인정보처리방침에 관한 문의는 <a href="mailto:heruse@gmail.com">heruse@gmail.com</a> 으로 보내주세요.</p>
 
-<div class="en">
-<h1>Privacy Policy (English)</h1>
-<p class="updated">Horang English · Last updated: August 21, 2026</p>
-
-<div class="lede">
-  <strong>Horang English does not collect any personal data.</strong>
-  The app has no account or login, and no feature that transmits data to a server automatically.
-  All learning records stay on the user's device, and usage records reach the developer
-  <strong>only when the user explicitly taps "Send usage log"</strong> (see section 2).
-</div>
-
-<h2>1. Data We Collect</h2>
-<p>None. The app does not collect or request names, email addresses, phone numbers,
-location, contacts, photos, or device identifiers. It contains no advertising identifier,
-and no analytics, tracking, or advertising SDKs. Usage records that the user chooses to send
-are described in section 2 below.</p>
-
-<h2>2. Data Stored on the Device</h2>
-<p>To provide its learning features, the app stores the following <strong>only on the user's device</strong>.</p>
-<ul>
-  <li>Study progress (dates studied, correct/incorrect marks, pronunciation check marks)</li>
-  <li>Test scores and the linked allowance ledger entries</li>
-  <li>App settings (notification preference, amount settings)</li>
-  <li><strong>Usage records</strong> — when the app was opened and closed, where on the home screen
-      and which buttons were tapped (with how far the finger moved, to tell taps from scrolls), when and from where a wordbook was opened, how long each screen
-      (wordbook, review, test, pronunciation check, achievements, settings) was open, and how many times
-      pronunciation playback, example sheets, hiding, peeking and swiping were used inside a wordbook
-      (recorded only as per-visit totals, never tied to a specific word)</li>
-</ul>
-<p>This data is <strong>not transmitted out of the app automatically.</strong> It is sent to the
-developer only when the user <strong>explicitly taps "Send usage log"</strong> — in the Settings
-screen, or in a request screen the app occasionally shows. A summary of what will be sent is shown on screen
-beforehand, and the file itself is plain text so it can be opened and read directly. The user
-chooses where to send it.</p>
-<p><strong>What is transmitted</strong> is limited to the usage records above, plus the dates studied
-and progress made, the dates tests were taken, and the app version.
-<strong>It never includes the user's name, email address, phone number, device identifier, test
-scores, correct/incorrect answer details, allowance amounts, or which words were studied.</strong></p>
-<p>Deleting the app removes this data from the device. If iCloud device backup is enabled,
-app data may be included in that backup under Apple's backup policy. Such backups are managed
-by Apple and are not accessible to the developer.</p>
-
-<h2>3. Network Communication</h2>
-<p>The app does not connect to the internet during normal use. Vocabulary, definitions,
-and example sentences are bundled with the app and work fully offline. Tapping "Send usage log"
-does not make the app communicate over the network itself; it hands a file to another app of the
-user's choosing (for example a messenger) through the device's system share sheet.</p>
-
-<h2>4. Device Features Used</h2>
-<ul>
-  <li><strong>Text-to-speech</strong> — Uses the speech synthesis built into iOS to pronounce words. There is no recording feature and the microphone is not used.</li>
-  <li><strong>Notifications</strong> — Study reminders are local notifications scheduled on the device. Remote push is not used, so no device token is generated or sent anywhere. Notifications are off by default and must be enabled by the user in Settings.</li>
-  <li><strong>Sharing</strong> — Only when the user taps the share button, the app renders a progress image and hands it to the iOS share sheet. The destination is chosen by the user; nothing is sent to the developer.</li>
-</ul>
-
-<h2>5. Children's Privacy</h2>
-<p>The app is intended for middle school students. Because it collects no personal data,
-it collects no data from children either.</p>
-
-<h2>6. Third Parties</h2>
-<p>Because no personal data is collected, no data is shared with or processed by third parties.</p>
-
-<h2>7. Your Rights</h2>
-<p>Since all data resides on the device, deleting the app completely removes all data.
-No separate deletion request is necessary.</p>
-
-<h2>8. Changes</h2>
-<p>Any changes to this policy will be posted on this page along with a revised "Last updated" date.</p>
-
-<h2>9. Contact</h2>
-<p>Questions about this policy: <a href="mailto:heruse@gmail.com">heruse@gmail.com</a></p>
-</div>
-
 <footer>
-  <a href="./">← 지원 페이지 / Support</a>
+  <a href="./">← 지원 페이지</a> · <a href="./terms.html">이용약관</a>
 </footer>
 
 </body>
